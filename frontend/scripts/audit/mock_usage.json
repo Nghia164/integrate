@@ -1,0 +1,142 @@
+{
+  "mockUsage": {
+    "assistantMock": {
+      "file": "src/mocks/assistantMock.js",
+      "importedBy": [
+        "src/services/assistantService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "attendanceMock": {
+      "file": "src/mocks/attendanceMock.js",
+      "importedBy": [
+        "src/mocks/reportMock.js",
+        "src/services/attendanceService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "authMock": {
+      "file": "src/mocks/authMock.js",
+      "importedBy": [
+        "src/services/authService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "availabilityMock": {
+      "file": "src/mocks/availabilityMock.js",
+      "importedBy": [
+        "src/services/availabilityService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "dashboardMock": {
+      "file": "src/mocks/dashboardMock.js",
+      "importedBy": [
+        "src/mocks/reportMock.js",
+        "src/services/dashboardService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "employeeMock": {
+      "file": "src/mocks/employeeMock.js",
+      "importedBy": [
+        "src/mocks/availabilityMock.js",
+        "src/mocks/dashboardMock.js",
+        "src/mocks/leaveMock.js",
+        "src/mocks/payrollMock.js",
+        "src/mocks/scheduleMock.js",
+        "src/mocks/shiftExchangeMock.js",
+        "src/mocks/workHoursMock.js",
+        "src/services/employeeService.js",
+        "src/services/workHoursService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "leaveMock": {
+      "file": "src/mocks/leaveMock.js",
+      "importedBy": [
+        "src/services/leaveService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "notificationMock": {
+      "file": "src/mocks/notificationMock.js",
+      "importedBy": [
+        "src/services/notificationService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "openShiftMock": {
+      "file": "src/mocks/openShiftMock.js",
+      "importedBy": [
+        "src/services/openShiftService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "payrollMock": {
+      "file": "src/mocks/payrollMock.js",
+      "importedBy": [
+        "src/mocks/reportMock.js",
+        "src/services/payrollService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "reportMock": {
+      "file": "src/mocks/reportMock.js",
+      "importedBy": [
+        "src/services/reportService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "scheduleMock": {
+      "file": "src/mocks/scheduleMock.js",
+      "importedBy": [
+        "src/mocks/dashboardMock.js",
+        "src/services/scheduleService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "shiftConfigMock": {
+      "file": "src/mocks/shiftConfigMock.js",
+      "importedBy": [
+        "src/mocks/availabilityMock.js",
+        "src/services/shiftConfigService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "shiftExchangeMock": {
+      "file": "src/mocks/shiftExchangeMock.js",
+      "importedBy": [
+        "src/services/shiftExchangeService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    },
+    "workHoursMock": {
+      "file": "src/mocks/workHoursMock.js",
+      "importedBy": [
+        "src/mocks/reportMock.js",
+        "src/services/payrollService.js",
+        "src/services/scheduleService.js",
+        "src/services/workHoursService.js"
+      ],
+      "hasLocalStorageKey": false,
+      "contentSummary": ""
+    }
+  },
+  "filesWithDbKey": [],
+  "directMockImportsInUI": []
+}

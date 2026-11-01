@@ -1,0 +1,115 @@
+/**
+ * Tầng: Dùng chung (Shared - FullCalendar Theme Overrides)
+ * Quy chuẩn: Font Be Vietnam Pro, nhãn giờ 14px 06:00, đường kẻ mảnh, đường giờ hiện tại đỏ, cột hôm nay #EEF2FB
+ */
+
+.staff-calendar {
+  font-family: inherit !important;
+}
+
+/* 1. Đầu cột ngày (Header Cells) */
+.staff-calendar .fc-col-header-cell {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+  padding: 8px 0 !important;
+}
+
+/* Cột Hôm nay: Nền trung tính #F0F6FB */
+.staff-calendar .fc-day-today {
+  background-color: #F0F6FB !important;
+}
+
+.staff-calendar .fc-col-header-cell.fc-day-today {
+  background-color: #F0F6FB !important;
+  border-bottom: 2px solid #0F172A !important;
+}
+
+/* 2. Trục thời gian & Đường kẻ giờ */
+.staff-calendar .fc-timegrid-slot {
+  height: 52px !important;
+  border-color: #F1F5F9 !important;
+}
+
+.staff-calendar .fc-timegrid-slot-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #475569 !important;
+  vertical-align: middle !important;
+  padding-right: 8px !important;
+}
+
+/* 3. Đường chỉ giờ hiện tại (Now Indicator) màu đỏ */
+.staff-calendar .fc-timegrid-now-indicator-line {
+  border-color: #EF4444 !important;
+  border-width: 2px !important;
+  z-index: 25 !important;
+}
+
+.staff-calendar .fc-timegrid-now-indicator-arrow {
+  border-color: #EF4444 !important;
+  border-width: 5px !important;
+  z-index: 25 !important;
+}
+
+/* 4. Vùng cuộn dọc mượt mà (Single scroll area) */
+.staff-calendar .fc-scroller {
+  overflow-y: auto !important;
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.staff-calendar .fc-scroller::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.staff-calendar .fc-scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.staff-calendar .fc-scroller::-webkit-scrollbar-thumb {
+  background-color: #CBD5E1;
+  border-radius: 9999px;
+}
+
+.staff-calendar .fc-scroller::-webkit-scrollbar-thumb:hover {
+  background-color: #94A3B8;
+}
+
+/* 5. Khối Event trong lịch */
+.staff-calendar .fc-timegrid-slot,
+.staff-calendar .fc-timegrid-slot-lane,
+.staff-calendar .fc-daygrid-day,
+.staff-calendar .fc-daygrid-day-frame,
+.staff-calendar .fc-col-header-cell {
+  cursor: default !important;
+}
+
+.staff-calendar .fc-timegrid-event-harness {
+  margin: 2px 3px !important;
+}
+
+.staff-calendar .fc-event,
+.staff-calendar .fc-event-main,
+.staff-calendar a.fc-event {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.staff-calendar .fc-event:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.staff-calendar .fc-event:active {
+  transform: translateY(0) !important;
+}
+
+.staff-calendar .fc-event-main {
+  padding: 0 !important;
+  height: 100% !important;
+}

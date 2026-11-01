@@ -1,0 +1,223 @@
+{
+  "manager": [
+    {
+      "page": "Tổng quan",
+      "path": "/manager/dashboard",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Ca & ràng buộc",
+      "path": "/manager/shift-config",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Khả năng làm việc",
+      "path": "/manager/availability",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Tạo lịch tự động",
+      "path": "/manager/schedule",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Lịch đã tạo",
+      "path": "/manager/schedule/created",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Đổi ca",
+      "path": "/manager/shift-exchange",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Ca trực mở",
+      "path": "/manager/open-shifts",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Quản lý nhân viên",
+      "path": "/manager/employees",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Đơn xin nghỉ",
+      "path": "/manager/leave",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Chấm công (danh sách)",
+      "path": "/manager/attendance",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Giờ làm",
+      "path": "/manager/work-hours",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Tính lương",
+      "path": "/manager/payroll",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Báo cáo",
+      "path": "/manager/reports",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Trợ lý AI",
+      "path": "/manager/assistant",
+      "status": "PASS",
+      "issues": []
+    }
+  ],
+  "staffAn": [
+    {
+      "page": "Lịch của tôi",
+      "path": "/employees/schedule",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Đăng ký rảnh/bận",
+      "path": "/employees/availability",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Đổi ca",
+      "path": "/employees/shift-exchange",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Ca trực mở",
+      "path": "/employees/open-shifts",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Nghỉ phép",
+      "path": "/employees/leave",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Chấm công",
+      "path": "/employees/attendance",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Thông tin cá nhân",
+      "path": "/employees/profile",
+      "status": "PASS",
+      "issues": []
+    }
+  ],
+  "staffCuong": [
+    {
+      "page": "Lịch của tôi",
+      "path": "/employees/schedule",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Đăng ký rảnh/bận",
+      "path": "/employees/availability",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Đổi ca",
+      "path": "/employees/shift-exchange",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Ca trực mở",
+      "path": "/employees/open-shifts",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Nghỉ phép",
+      "path": "/employees/leave",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Chấm công",
+      "path": "/employees/attendance",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "Thông tin cá nhân",
+      "path": "/employees/profile",
+      "status": "PASS",
+      "issues": []
+    }
+  ],
+  "advancedChecks": [
+    {
+      "item": "Dashboard (Lịch tuần & Bảng thiếu người)",
+      "status": "PASS",
+      "details": {
+        "hasTodayBadge": true,
+        "understaffHasCan": true,
+        "canValue": "2",
+        "understaffHasDaXep": true,
+        "daXepValue": "1"
+      }
+    },
+    {
+      "item": "Khả năng làm việc (Tuần rỗng 16/11 vs Tuần mẫu 26/10)",
+      "status": "PASS",
+      "details": {
+        "fullWeekCheck": {
+          "regCount": 7
+        },
+        "emptyWeekCheck": {
+          "registered": 0,
+          "unregistered": 7,
+          "hasBanner": true
+        }
+      }
+    },
+    {
+      "item": "Tạo lịch tự động (11 Ràng buộc)",
+      "status": "PASS",
+      "details": {
+        "count": 11,
+        "items": [
+          "Đủ số lượng nhân viên",
+          "Không trùng ca",
+          "Thời gian nghỉ tối thiểu",
+          "Số ngày làm liên tiếp tối đa",
+          "Giới hạn giờ làm việc",
+          "Không xếp ca tối rồi ca sáng hôm sau",
+          "Không xếp ca vào ngày nghỉ đã duyệt",
+          "Theo vai trò chuyên môn (Role_Tag)",
+          "Phân bổ giờ làm công bằng",
+          "Theo thời gian rảnh",
+          "Chia đều ca cuối tuần"
+        ]
+      }
+    }
+  ]
+}

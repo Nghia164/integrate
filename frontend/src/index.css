@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-navy: #0F172A;
+  --color-navy-hover: #1E293B;
+  --color-active-bg: #CBE3F0;
+  --color-highlight: #D9E8F5;
+  --color-page-bg: #F4F7F9;
+  --color-shell-bg: #F4F7F9;
+  --color-primary: #0F172A;
+  --color-primary-hover: #1E293B;
+  --color-primary-ring: #0F172A;
+  --color-primary-light: #CBE3F0;
+  --color-primary-light-text: #0F172A;
+}
+
+:root {
+  --navy: #0F172A;
+  --navy-hover: #1E293B;
+  --active-bg: #CBE3F0;
+  --highlight: #D9E8F5;
+  --page-bg: #F4F7F9;
+  --shell-bg: #F4F7F9;
+  --card-bg: #FFFFFF;
+  --card-border: #E2E8F0;
+  --font-main: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --text-title: 1.5rem;       /* 24px */
+  --text-card-title: 1rem;    /* 16px */
+  --text-body: 0.9375rem;     /* 15px */
+  --text-sub: 0.8125rem;      /* 13px */
+  --radius-card: 1.25rem;     /* 20px */
+  --radius-btn: 0.75rem;      /* 12px */
+  --radius-pill: 9999px;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    background-color: var(--page-bg, #F4F7F9);
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font-main);
+    color: var(--navy);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Thanh cuộn nền cùng tông #F4F7F9 */
+  * {
+    scrollbar-color: #CBD5E1 var(--page-bg, #F4F7F9);
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--page-bg, #F4F7F9);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #CBD5E1;
+    border-radius: 9999px;
+    border: 2px solid var(--page-bg, #F4F7F9);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #94A3B8;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  select,
+  summary,
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="date"],
+  input[type="time"] {
+    cursor: pointer;
+  }
+
+  /* Loại bỏ viền đen mặc định của trình duyệt khi bấm chuột; chỉ hiện viền khi điều hướng bằng bàn phím */
+  :focus:not(:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  :focus-visible {
+    outline: 2px solid var(--navy) !important;
+    outline-offset: 2px !important;
+  }
+}

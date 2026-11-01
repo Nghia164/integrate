@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment
+.env
+.env.local
+
+# Temp / Scratch / To Delete / Artifacts
+_to_delete
+_to_delete/
+scratch
+scratch/
+screenshot_*.png
+*.report.txt
+scripts/after/
+reports/
+reports
+coverage/
+coverage
+
+# Chrome profile temp
+tmp_chrome_profile
+tmp_chrome_profile/
+tests/e2e/downloads/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
